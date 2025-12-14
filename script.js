@@ -2,17 +2,12 @@
    CONFIGURAÇÕES
 ================================ */
 const checkoutLink = "https://pay.kiwify.com.br/rMgeeK5";
-const supportEmail = "suporte.rocketmarket@gmail.com";
 
 /* ================================
    REDIRECIONAMENTOS
 ================================ */
 function goCheckout() {
   window.location.href = checkoutLink;
-}
-
-function openSupport() {
-  window.location.href = supportEmail;
 }
 
 /* ================================
@@ -90,3 +85,4 @@ setTimeout(() => {
   }, Math.floor(Math.random() * (16000 - 10000) + 10000));
 
 }, 6000);
+
