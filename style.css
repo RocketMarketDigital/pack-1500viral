@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #050505;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,0,0,0.35), transparent 70%);
+  filter: blur(90px);
+}
+
+.hero-content {
+  max-width: 720px;
+  z-index: 2;
+  padding: 20px;
+}
+
+.product-image {
+  max-width: 260px;
+  margin-bottom: 30px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #ccc;
+  font-size: 1.05rem;
+}
+
+.cta-soft {
+  margin-top: 30px;
+  padding: 14px 36px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff0000, #8b0000);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-soft:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(255,0,0,0.6);
+}
+
+.section {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 720px;
+  margin: auto;
+  color: #bbb;
+}
+
+.videos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.videos video {
+  width: 260px;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(255,0,0,0.35);
+}
+
+.proof ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.proof li {
+  margin: 10px 0;
+}
+
+.floating-img {
+  position: absolute;
+  width: 180px;
+  opacity: 0.8;
+  animation: float 6s ease-in-out infinite;
+}
+
+.left { left: -40px; top: 30%; }
+.right { right: -40px; top: 55%; }
+
+footer {
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.support {
+  background: none;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
